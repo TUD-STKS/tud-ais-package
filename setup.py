@@ -1,5 +1,4 @@
 from setuptools import setup
-import glob
 
 setup(name='tud-ais',
       version='0.1.6',
