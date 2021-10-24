@@ -1,17 +1,22 @@
 from setuptools import setup
 
-setup(name='tud-ais',
-      version='0.1.6',
+setup(name='tudais',
+      version='0.1.7',
       description='Supplemental material for the lecture Angewandte Intelligente Signalverarbeitung at TU Dresden',
       url='http://github.com/TUD-STKS/tud-ais-package',
       author='Simon Stone',
       author_email='simon.stone@tu-dresden.de',
       license='MIT',
-      packages=['tud-ais'],
+      packages=['tudais'],
       include_package_data=True,
       install_requires=[
           'jupyterlab',
           'pandas',
           'scikit-learn',
       ],
+      entry_points={
+          'console_scripts': [
+              'tud-ais = tudais.__main__:start_jupyter_server',
+          ]
+      }
       )
