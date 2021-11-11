@@ -13,6 +13,7 @@ setup(name='tudais',
           'jupyterlab',
           'pandas',
           'scikit-learn',
+          'tudthemes'
       ],
       entry_points={
           'console_scripts': [
