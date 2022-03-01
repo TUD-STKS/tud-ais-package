@@ -1,8 +1,9 @@
 from setuptools import setup
 
-setup(name='tudais',
-      version='0.1.7',
-      description='Supplemental material for the lecture Angewandte Intelligente Signalverarbeitung at TU Dresden',
+setup(name='tud-ais',
+      version='0.1.2',
+      description='Supplemental material for the lecture Angewandte '
+                  'Intelligente Signalverarbeitung at TU Dresden',
       url='http://github.com/TUD-STKS/tud-ais-package',
       author='Simon Stone',
       author_email='simon.stone@tu-dresden.de',
@@ -13,7 +14,7 @@ setup(name='tudais',
           'jupyterlab',
           'pandas',
           'scikit-learn',
-          'tudthemes'
+          'tud-themes'
       ],
       entry_points={
           'console_scripts': [
