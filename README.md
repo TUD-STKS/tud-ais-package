@@ -52,8 +52,7 @@ does not contain spaces.
    This will open your default web browser and show the root folder of the lab material.
    
 
-If you run into any problems in this process, contact [Simon Stone](mailto:simon
-.stone@tu-dresden.de?subject=Praktikum%20AIS) for 
+If you run into any problems in this process, contact [Simon Stone](mailto:simon.stone@tu-dresden.de?subject=Praktikum%20AIS) for 
 assistance.
    
    
