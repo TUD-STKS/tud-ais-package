@@ -38,10 +38,25 @@ does not contain spaces.
 1. Make sure that your virtual environment is active (see Step 1.4 above).
 2. Install the lab material by entering the following command:
     ```
-    pip install tud-ais
+    pip install tudais
     ```
- 
+   This will install all dependencies of the lab materials and the lab materials 
+   itself. It may take a while.
+   
+### Step 3: Start the lab
+1. Make sure that your virtual environment is active (see Step 1.4 above).
+2. Enter the following command:
+   ```
+   tud-ais
+   ```
+   This will open your default web browser and show the root folder of the lab material.
+   
 
+If you run into any problems in this process, contact [Simon Stone](mailto:simon
+.stone@tu-dresden.de?subject=Praktikum%20AIS) for 
+assistance.
+   
+   
 
 
  
