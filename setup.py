@@ -18,7 +18,8 @@ setup(name='tudais',
       ],
       entry_points={
           'console_scripts': [
-              'tud-ais = tudais.__main__:start_jupyter_server',
+              'tud-ais-start = tudais.__main__:start_jupyter_server',
+              'tud-ais-prepare-submission = tudais.__main__:prepare_submission'
           ]
       }
       )
