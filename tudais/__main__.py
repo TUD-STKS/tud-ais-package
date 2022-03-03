@@ -160,4 +160,3 @@ def validate_matriculation_number(mat_num: str):
 if __name__ == '__main__':
     # start_jupyter_server()
     prepare_submission()
-

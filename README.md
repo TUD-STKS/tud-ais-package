@@ -47,9 +47,18 @@ does not contain spaces.
 1. Make sure that your virtual environment is active (see Step 1.4 above).
 2. Enter the following command:
    ```
-   tud-ais
+   tud-ais-start
    ```
    This will open your default web browser and show the root folder of the lab material.
+   
+### Step 4: Submit the completed material
+1. Make sure that your virtual environment is active (see Step 1.4 above).
+2. Enter the following command:
+   ```
+   tud-ais-prepare-submission
+   ```
+   This will create a ZIP archive with all required files.
+3. Send the ZIP archive to your lab supervisor via email.
    
 
 If you run into any problems in this process, contact [Simon Stone](mailto:simon.stone@tu-dresden.de?subject=Praktikum%20AIS) for 

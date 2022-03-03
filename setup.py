@@ -1,3 +1,5 @@
+""" Setup script for tudais """
+
 from setuptools import setup
 
 setup(name='tudais',
