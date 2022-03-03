@@ -1,7 +1,7 @@
 """ The main script containing general functions and the entry points """
 import os
 from pathlib import Path
-import shutil
+from zipfile import ZipFile, ZIP_DEFLATED
 from tkinter import Tk
 from tkinter.filedialog import askdirectory
 
@@ -22,6 +22,21 @@ dialog
 """
 root = Tk()
 root.withdraw()
+
+
+def generate_submission_list():
+    """
+    Generates a list of files required for submission
+    :return A list of strings containing the full path to each required file
+    """
+    root_dir = get_notebook_dir()
+    file_list = []
+    for folder, _, files in os.walk(root_dir):
+        if is_folder_included(folder):
+            # All files in this folder are required for submission
+            for file in files:
+                file_list.append(str(Path(folder) / file))
+    return file_list
 
 
 def get_notebook_dir():
@@ -63,12 +78,26 @@ def get_user_data():
     return first_name, last_name, matriculation_number
 
 
+def is_folder_included(folder):
+    """
+    Checks if a folder should be included in the submission.
+    """
+    return (Path(folder) / '.include_in_submission').exists()
+
+
 def package_notebooks(filename: str):
     """
     Packages all notebooks into a zip file
     """
-    print("Collecting all files into a ZIP archive...", end="")
-    shutil.make_archive(filename, 'zip', get_notebook_dir())
+    print("Collecting all required files into a ZIP archive...", end="")
+    files_to_submit = generate_submission_list()
+    with ZipFile(filename + '.zip', mode='w',
+                 compression=ZIP_DEFLATED, compresslevel=5) as zf:
+        for file in files_to_submit:
+            # The name of the file in the archive should start at the
+            # notebook root folder
+            arc_name = file.replace(get_notebook_dir(), "")
+            zf.write(file, arcname=arc_name)
     print("...done.")
 
 
@@ -129,5 +158,6 @@ def validate_matriculation_number(mat_num: str):
 
 
 if __name__ == '__main__':
-    start_jupyter_server()
+    # start_jupyter_server()
     prepare_submission()
+
