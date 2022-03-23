@@ -47,10 +47,33 @@ does not contain spaces.
 1. Make sure that your virtual environment is active (see Step 1.4 above).
 2. Enter the following command:
    ```
-   tud-ais
+   tud-ais-start
    ```
    This will open your default web browser and show the root folder of the lab material.
    
+### Step 4: Have fun working through the notebooks
+Some of the notebooks are explicitly structured and contain detailed instructions 
+(code-along), while other notebooks are far less guided and offer an opportunity to 
+apply your acquired knowledge (hands-on).
+
+The recommended order of tackling the notebooks is as follows:
+1. `preprocessing/Lego-Sets/Lego Sets Preprocessing.ipynb` (code-along)
+2. `classification/Wine-Quality/Klassifikation von Wein.ipynb` (code-along)
+3. `regression/Wine-Alcohol/Vorhersage des Alkoholgehalts von Wein.ipynb` (code-along)
+4. `classification/Titanic/Untergang der Titanic.ipynb` (hands-on) 
+5. `regression/House-Prices/Vorhersage von Immobilienpreisen.ipynb` (hands-on)
+   
+### Step 5: Submit the completed material
+Once you have completed the material, you may submit your solution for 
+credit or qualification purposes.
+1. Make sure that your virtual environment is active (see Step 1.4 above).
+2. Enter the following command:
+   ```
+   tud-ais-prepare-submission
+   ```
+   When prompted, enter your personal information. This will create a ZIP archive 
+   with all required files.
+3. Send the ZIP archive to your lab supervisor via email.
 
 If you run into any problems in this process, contact [Simon Stone](mailto:simon.stone@tu-dresden.de?subject=Praktikum%20AIS) for 
 assistance.
