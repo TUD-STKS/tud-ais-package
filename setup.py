@@ -1,7 +1,9 @@
+""" Setup script for tudais """
+
 from setuptools import setup
 
 setup(name='tudais',
-      version='0.1',
+      version='0.2',
       description='Supplemental material for the lecture Angewandte '
                   'Intelligente Signalverarbeitung at TU Dresden',
       url='http://github.com/TUD-STKS/tud-ais-package',
@@ -18,6 +20,8 @@ setup(name='tudais',
       ],
       entry_points={
           'console_scripts': [
+              'tud-ais-start = tudais.__main__:start_jupyter_server',
+              'tud-ais-prepare-submission = tudais.__main__:prepare_submission'
               'tud-ais = tudais.__main__:start_jupyter_server',
           ]
       }
