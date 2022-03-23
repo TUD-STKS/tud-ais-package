@@ -22,7 +22,6 @@ setup(name='tudais',
           'console_scripts': [
               'tud-ais-start = tudais.__main__:start_jupyter_server',
               'tud-ais-prepare-submission = tudais.__main__:prepare_submission'
-              'tud-ais = tudais.__main__:start_jupyter_server',
           ]
       }
       )
