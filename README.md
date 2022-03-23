@@ -57,9 +57,9 @@ does not contain spaces.
    ```
    tud-ais-prepare-submission
    ```
-   This will create a ZIP archive with all required files.
+   When prompted, enter your personal information. This will create a ZIP archive 
+   with all required files.
 3. Send the ZIP archive to your lab supervisor via email.
-   
 
 If you run into any problems in this process, contact [Simon Stone](mailto:simon.stone@tu-dresden.de?subject=Praktikum%20AIS) for 
 assistance.
