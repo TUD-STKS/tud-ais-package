@@ -75,7 +75,7 @@ credit or qualification purposes.
    with all required files.
 3. Send the ZIP archive to your lab supervisor via email.
 
-If you run into any problems in this process, contact [Simon Stone](mailto:simon.stone@tu-dresden.de?subject=Praktikum%20AIS) for 
+If you run into any problems in this process, contact [Christian Kleiner](mailto:christian.kleiner@tu-dresden.de?subject=Praktikum%20AIS) for 
 assistance.
    
    

@@ -3,12 +3,12 @@
 from setuptools import setup
 
 setup(name='tudais',
-      version='0.2',
+      version='0.3',
       description='Supplemental material for the lecture Angewandte '
                   'Intelligente Signalverarbeitung at TU Dresden',
       url='http://github.com/TUD-STKS/tud-ais-package',
-      author='Simon Stone',
-      author_email='simon.stone@tu-dresden.de',
+      author='Simon Stone, Christian Kleiner, Peter Steiner',
+      author_email='christian.kleiner@tu-dresden.de',
       license='MIT',
       packages=['tudais'],
       include_package_data=True,
@@ -16,7 +16,8 @@ setup(name='tudais',
           'jupyterlab',
           'pandas',
           'scikit-learn',
-          'tudthemes'
+          'tudthemes',
+          'seaborn'
       ],
       entry_points={
           'console_scripts': [
